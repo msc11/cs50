@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: It's neither bubble nor selection
+
+sort2 uses: merge sort
+
+How do you know?: It shows the best performance in reversed examples
+
+sort3 uses: selection sort
+
+How do you know?: It has the worst performance in sorted examples
