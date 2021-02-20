@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Interest</title>
+        <link href="styles.css" rel="stylesheet">
+        <script>
+            function confirmClick(event)
+            {
+                var trigger = event.srcElement;
+                confirm("Do you want to go back to the main page?");
+            }
+        </script>
+    </head>
+    <body>
+        Some Interests..
+        <ul>
+            <li id="id1">Computer Science</li>
+            <li>Machine Leearning</li>
+            <li>Computer Vision</li>
+            <li>Signal Processing</li>
+            <li>Engineering</li>
+            <li>Climate Change</li>
+            <li>Risk Analysis</li>
+        </ul>
+        <br />
+        <a href="index.html" onclick="confirmClick(event)">back to main</a>
+    </body>
+</html>

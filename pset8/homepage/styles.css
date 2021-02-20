@@ -1,0 +1,42 @@
+table
+{
+    border: 2px solid gray;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+td
+{
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+tr
+{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    font-family: italic;
+    text-align: center;
+}
+.c1
+{
+    background-color: skyblue;
+    color: navy;
+    text-indent: 30px;
+    text-transform: uppercase;
+    margin-top: 0em;
+    margin-bottom: 0.2em;
+    width: 20%;
+}
+#id1
+{
+    text-transform: uppercase;
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.8);
+    width:20%;
+    font-family: Tahoma;
+}
