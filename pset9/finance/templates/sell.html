@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+{% block main %}
+    <form action="/sell" method="post">
+        <select class="form-control" name="symbol">
+            <option value="" disabled selected>Symbol</option>
+            {% for d in data %}
+                {% if d.shares > 0 %}
+                    <option value="{{ d.symbol }}">{{ d.symbol }}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" name="shares" placeholder="Shares" type="number" min="1">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+{% endblock %}
